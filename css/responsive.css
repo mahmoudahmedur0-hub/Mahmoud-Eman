@@ -1,0 +1,32 @@
+@media(max-width:900px){
+  .section{padding:58px 0}.countdown-grid{grid-template-columns:1fr}.hero__image{background-position:center top}.timeline{max-width:760px}
+}
+@media(max-width:620px){
+  .container{width:min(92vw,620px)}.section{padding:46px 0}.hero{min-height:100svh}.hero__image{background-position:center top}.hero__content{padding-bottom:56px}.hero__names{gap:7px;font-size:clamp(55px,17vw,84px)}.hero__content p{font-size:16px;line-height:1.65;margin-top:18px}.invitation{padding-top:54px;padding-bottom:34px}.paper-card{padding:42px 20px;border-radius:26px}.paper-card h2,.section-title h2,.finish h2{font-size:clamp(33px,10vw,48px)}.section-title{margin-bottom:25px}.timeline:before{right:28px}.timeline__item{grid-template-columns:58px 1fr;gap:13px;margin-bottom:16px}.timeline__icon{width:58px;height:58px}.timeline__icon img{width:31px;height:31px}.timeline__card{padding:22px 18px;border-radius:22px}.timeline__card h3{font-size:24px}.timeline__card p{font-size:14.5px}.counter{padding:24px 12px;border-radius:24px}.counter__units{gap:2px}.counter__units div{padding:11px 1px}.counter__units b{font-size:clamp(25px,8vw,38px)}.counter__units span{font-size:10.5px}.finish{padding-top:54px;padding-bottom:95px}.launch-pad{width:142px;height:165px}.launch-pad img{width:98px}.whatsapp{left:14px;bottom:16px;width:52px;height:52px}.whatsapp img{width:29px}.whatsapp.is-prominent{width:62px;height:62px}.quran__card{padding:34px 16px;border-radius:25px}.quran__ayah{font-size:clamp(21px,6.4vw,31px);line-height:1.72}
+}
+@media(max-width:390px){
+  .hero__names{font-size:50px}.counter__units b{font-size:24px}.counter__units span{font-size:9.5px}.timeline__card{padding:19px 15px}
+}
+
+@media(max-width:620px){
+  html{scroll-snap-type:y proximity;scroll-padding-top:0}
+  body{overscroll-behavior-y:contain}
+  .hero,.invitation,.events,.countdown-section,.finish{scroll-snap-align:start;scroll-snap-stop:normal}
+  .section{padding:54px 0}
+  .invitation{padding-top:58px;padding-bottom:42px}
+  .events{padding-top:50px;padding-bottom:48px}
+  .countdown-section{padding-top:50px;padding-bottom:48px}
+  .finish{padding-top:56px;padding-bottom:94px}
+  body:before{position:absolute;opacity:.035;filter:blur(8px);transform:scale(1.04)}
+  body:after{position:absolute;opacity:.24;background-size:68px 68px}
+  .hero__image{animation-duration:24s;will-change:transform}
+  .hero__shine{animation-duration:15s}
+  .reveal{transition-duration:.9s;transform:translateY(34px)}
+  .timeline__item{margin-bottom:22px}
+  .counter{margin-bottom:4px}
+  .quran__card{width:min(94vw,620px);padding:38px 18px}
+  .quran__bismillah{font-size:clamp(29px,8.5vw,43px);margin-bottom:26px}
+  .quran__ayah{font-size:clamp(19px,5.8vw,28px);line-height:1.95}
+  .quran__line{margin:.34em 0}
+  .quran__source{margin-top:26px}
+}

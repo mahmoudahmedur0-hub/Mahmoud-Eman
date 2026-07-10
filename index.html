@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f8eadc" />
+  <meta name="description" content="دعوة زفاف محمود وإيمان" />
+  <title>Mahmoud & Eman | Wedding Invitation</title>
+  <link rel="preload" href="assets/images/couple.png" as="image" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <canvas id="skyCanvas" aria-hidden="true"></canvas>
+
+  <div class="gate" id="gate" aria-label="Opening invitation">
+    <div class="gate__door gate__door--left"></div>
+    <div class="gate__door gate__door--right"></div>
+    <div class="gate__light" aria-hidden="true"></div>
+    <div class="gate__content">
+      <p class="gate__mini">Welcome to Our Wedding</p>
+      <div class="monogram" aria-label="M and E"><span>M</span><i>✦</i><span>E</span></div>
+      <button class="btn btn--gold" id="openInvitation" type="button">Open Invitation</button>
+    </div>
+  </div>
+
+  <section class="quran" id="quranScene" aria-label="Quran intro">
+    <div class="quran__card">
+      <p class="quran__bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+      <div class="quran__ayah">
+        <p class="quran__line">﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا</p>
+        <p class="quran__line">لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+        <p class="quran__line">إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ﴾</p>
+      </div>
+      <span class="quran__source">سورة الروم — الآية ٢١</span>
+    </div>
+  </section>
+
+  <main id="mainContent" class="site hidden">
+    <section class="hero" id="home">
+      <div class="hero__image" aria-hidden="true"></div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__shine" aria-hidden="true"></div>
+      <div class="hero__content container reveal">
+        <span class="hero__eyebrow">بكل حب</span>
+        <h1 class="hero__names"><span>Mahmoud</span><i>♡</i><span>Eman</span></h1>
+        <p class="hero__tagline-ar">يشرفنا حضوركم ومشاركتكم أجمل لحظات حياتنا.</p>
+        <p class="hero__tagline-en" lang="en">Together is a Beautiful Place to Be</p>
+        <a href="#events" class="scroll-cue" aria-label="انتقل إلى تفاصيل الدعوة"><span></span></a>
+      </div>
+    </section>
+
+    <section class="section invitation" id="invitation">
+      <div class="container">
+        <article class="paper-card reveal">
+          <div class="paper-card__mark">M ✦ E</div>
+          <span class="kicker">Our Wedding Invitation</span>
+          <h2>دعوتنا إليكم</h2>
+          <p class="invitation-copy"><strong>يشرفنا حضوركم</strong><br />لتكتمل فرحتنا بوجودكم بيننا.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section events" id="events">
+      <div class="container">
+        <header class="section-title reveal">
+          <span>Save the Dates</span>
+          <h2>موعد لقائنا</h2>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__icon"><img src="assets/icons/book.svg" alt="" /></div>
+            <div class="timeline__card">
+              <small>عقد القِران</small>
+              <h3 class="event-date">١٧ / ٠٩ / ٢٠٢٦</h3>
+              <p class="event-time">الساعة ٨:٠٠ مساءً</p>
+              <p>قاعة ألف ليلة وليلة<br />ملوي — المنيا</p>
+              <a class="map-btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/CRhMHeCLsRtnA8Jg9"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.08 7-12A7 7 0 1 0 5 9c0 5.92 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg><span>عرض موقع القاعة</span><b aria-hidden="true">↗</b></a>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal reveal--delay-1">
+            <div class="timeline__icon"><img src="assets/icons/couple.svg" alt="" /></div>
+            <div class="timeline__card">
+              <small>حفل الزفاف</small>
+              <h3 class="event-date">١١ / ١١ / ٢٠٢٦</h3>
+              <p class="event-time">الساعة ٨:٠٠ مساءً</p>
+              <p>قاعة الهضبة<br />الغردقة</p>
+              <a class="map-btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/6z2A1HMb1tvDAtEx9"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.08 7-12A7 7 0 1 0 5 9c0 5.92 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg><span>عرض موقع القاعة</span><b aria-hidden="true">↗</b></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section countdown-section" id="countdown">
+      <div class="container">
+        <header class="section-title reveal">
+          <span>Countdown</span>
+          <h2>الموعد المنتظر</h2>
+        </header>
+
+        <div class="countdown-grid">
+          <article class="counter reveal" data-date="2026-09-17T20:00:00+03:00">
+            <h3>عقد القِران</h3>
+            <div class="counter__units">
+              <div><b data-unit="seconds">٠٠</b><span>ثانية</span></div>
+              <div><b data-unit="minutes">٠٠</b><span>دقيقة</span></div>
+              <div><b data-unit="hours">٠٠</b><span>ساعة</span></div>
+              <div><b data-unit="days">٠٠</b><span>يوم</span></div>
+            </div>
+          </article>
+
+          <article class="counter reveal reveal--delay-1" data-date="2026-11-11T20:00:00+03:00">
+            <h3>حفل الزفاف</h3>
+            <div class="counter__units">
+              <div><b data-unit="seconds">٠٠</b><span>ثانية</span></div>
+              <div><b data-unit="minutes">٠٠</b><span>دقيقة</span></div>
+              <div><b data-unit="hours">٠٠</b><span>ساعة</span></div>
+              <div><b data-unit="days">٠٠</b><span>يوم</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section finish" id="party">
+      <div class="container finish__inner reveal">
+        <span class="kicker">One Last Touch</span>
+        <h2>أضيئوا سماء فرحتنا</h2>
+        <button class="launch-pad" id="rocketButton" type="button" aria-label="إطلاق الألعاب النارية">
+          <span class="launch-pad__halo"></span>
+          <img src="assets/icons/rocket.svg" alt="" />
+          <span class="launch-pad__base"></span>
+        </button>
+        <p class="finish__message">في انتظار لقائكم بكل الحب <span aria-hidden="true">♡</span></p>
+        <p class="signature">Mahmoud <span>♡</span> Eman</p>
+        <button class="replay-intro" id="replayIntro" type="button">إعادة مشاهدة الافتتاحية</button>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp" id="whatsappButton" target="_blank" rel="noopener" aria-label="إرسال تهنئة عبر واتساب" href="https://wa.me/201066691991?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%0A%D9%8A%D8%B3%D8%B9%D8%AF%D9%86%D8%A7%20%D8%AA%D8%A3%D9%83%D9%8A%D8%AF%20%D8%AD%D8%B6%D9%88%D8%B1%D9%86%D8%A7%D8%8C%20%D9%88%D9%86%D8%B3%D8%A3%D9%84%20%D8%A7%D9%84%D9%84%D9%87%20%D8%A3%D9%86%20%D9%8A%D8%AA%D9%85%20%D9%84%D9%83%D9%85%20%D8%A7%D9%84%D9%81%D8%B1%D8%AD%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%AE%D9%8A%D8%B1.%20%F0%9F%8C%B9">
+    <img src="assets/icons/whatsapp.svg" alt="" />
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/fireworks.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
